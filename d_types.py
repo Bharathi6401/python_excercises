@@ -1,26 +1,47 @@
-numbers = [10, 10, 10]
+# numbers = [10, 5, 20, 5, 2, 8, 2, 1]
 
-largest = float('-inf')
-second_largest = float('-inf')
-third_largest = float('-inf')
+# smallest=float('inf')
+# second_smallest=float('inf')
+# third_smallest=float('inf')
+# for num in numbers:
+#     if num < smallest:
+#         third_smallest=second_smallest
+#         second_smallest=smallest
+#         smallest=num
+#     elif num < second_smallest and num !=smallest:
+#         third_smallest=second_smallest
+#         second_smallest=num
+#     elif num <third_smallest and num != second_smallest and num !=smallest:
+#         third_smallest=num
 
-for num in numbers:
-    if num > largest:
-        third_largest = second_largest
-        second_largest = largest
-        largest = num
+# if third_smallest== float('inf'):
+#     print("No third-smallest distinct number")
+# else:
+#     print(third_smallest)
 
-    elif num > second_largest and num != largest:
-        third_largest = second_largest
-        second_largest = num
+# numbers = [10, 10, 10]
 
-    elif num > third_largest and num != largest and num != second_largest:
-        third_largest = num
+# largest = float('-inf')
+# second_largest = float('-inf')
+# third_largest = float('-inf')
 
-if third_largest == float('-inf'):
-    print("No third-largest distinct number")
-else:
-    print(third_largest)
+# for num in numbers:
+#     if num > largest:
+#         third_largest = second_largest
+#         second_largest = largest
+#         largest = num
+
+#     elif num > second_largest and num != largest:
+#         third_largest = second_largest
+#         second_largest = num
+
+#     elif num > third_largest and num != largest and num != second_largest:
+#         third_largest = num
+
+# if third_largest == float('-inf'):
+#     print("No third-largest distinct number")
+# else:
+#     print(third_largest)
 
 
 
