@@ -5,7 +5,87 @@ employee = {
     "emp4": {"name": "Divya", "age": 26, "salary": 40000, "department": "IT"},
     "emp5": {"name": "Ravi", "age": 28, "salary": 28000, "department": "HR"}
 }
+department_salary = {}
+department_count = {}
 
+for emp,details in employee.items():
+    department = details["department"]
+    salary = details["salary"]
+    department_salary[department] = department_salary.get(department, 0) + salary
+    department_count[department] = department_count.get(department, 0) + 1
+department_average = {}
+for department, total in department_salary.items():
+    average = total/department_count[department]
+    department_average[department] = average
+    
+print(department_average)
+
+# employee = {
+#     "emp1": {"name": "Priya", "age": 24, "salary": 30000, "department": "IT"},
+#     "emp2": {"name": "Arun", "age": 25, "salary": 35000, "department": "HR"},
+#     "emp3": {"name": "Kumar", "age": 23, "salary": 35000, "department": "IT"},
+#     "emp4": {"name": "Divya", "age": 26, "salary": 40000, "department": "IT"},
+#     "emp5": {"name": "Ravi", "age": 28, "salary": 28000, "department": "HR"}
+# }
+# # Next interview challenge: Department with highest total salary
+
+# department_salary={}
+# for emp,details in employee.items():
+#     department=details["department"]
+#     salary=details["salary"]
+#     if department in department_salary:
+#         department_salary[department]+=salary
+#     else:
+#         department_salary[department]=salary
+# highest_salary = 0
+# highest_department = ""
+# for department, total in department_salary.items():
+#     if total > highest_salary:
+#         highest_salary = total
+#         highest_department = department
+
+# print("Department:", highest_department)
+# print("Total salary:", highest_salary)
+
+
+
+
+
+# Find the department-wise total salary.
+# department_salary={}
+# for emp,details in employee.items():
+#     salary=details["salary"]
+#     department=details["department"]
+#     if department in department_salary:
+#         department_salary[department]+=salary
+#     else:
+#         department_salary[department]=salary 
+
+# print(department_salary)
+      
+      
+
+# highest_count = 0
+# highest_department = ""
+# department_count={}
+
+# for emp,details in employee.items():
+#     department=details["department"]
+#     if department in department_count:
+#         department_count[department]+=1
+#     else:
+#         department_count[department]=1
+
+
+# for department, count in department_count.items():
+#     if count > highest_count:
+#         highest_count = count
+#         highest_department = department
+
+        
+
+# print("Department with most employee",highest_department)
+# print("employee count",highest_count)
 
 # highest_salary = float("-inf")
 # second_highest = float("-inf")
