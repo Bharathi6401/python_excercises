@@ -1,16 +1,16 @@
-def find_duplicate_chars(text):
-    duplicate={}
-    for char in text:
-     duplicate[char] = duplicate.get(char, 0) + 1
-    duplicates=[]
-    for char,count in duplicate.items():
-        if count> 1:
-            duplicates.append(char)
+# def find_duplicate_chars(text):
+#     duplicate={}
+#     for char in text:
+#      duplicate[char] = duplicate.get(char, 0) + 1
+#     duplicates=[]
+#     for char,count in duplicate.items():
+#         if count> 1:
+#             duplicates.append(char)
 
-    return duplicates
-print(find_duplicate_chars("aabbcca"))
-print(find_duplicate_chars("python"))
-print(find_duplicate_chars(""))
+#     return duplicates
+# print(find_duplicate_chars("aabbcca"))
+# print(find_duplicate_chars("python"))
+# print(find_duplicate_chars(""))
 
 
 
@@ -82,6 +82,76 @@ print(find_duplicate_chars(""))
 #     return rev
 
 # print(reverse_string(text="python"))
+# def vowels_count(text):
+#     vowels = "aeiou"
+#     count = 0
+
+#     for char in text:
+#         if char in vowels:
+#             count += 1
+
+#     return count
+
+# print(vowels_count("programming"))
+
+# text = "python programming"
+# vowels_count = 0
+# consonants_count = 0
+# for char in text:
+#     if char.isalpha():
+#         if char in "aeiou":
+#             vowels_count += 1
+#         else:
+#             consonants_count += 1
+# print("Vowels:", vowels_count)
+# print("Consonants:", consonants_count)
+
+# def is_palindrome(text):
+#     text = text.lower()
+#     cleaned = ""
+
+#     for char in text:
+#         if char.isalnum():
+#             cleaned += char
+
+#     rev = ""
+
+#     for char in cleaned:
+#         rev = char + rev
+
+#     return cleaned == rev
 
 
-    
+# print(is_palindrome("A man a plan a canal Panama"))
+# print(is_palindrome("A man, a plan, a canal: Panama"))
+# print(is_palindrome("hello"))
+
+# def character_frequecy(text):
+#     text = text.lower()
+#     frequency={}
+#     for char in text:
+#         frequency[char]=frequency.get(char,0)+1
+#     return frequency
+
+# print(character_frequecy("banana"))
+
+# def finde_duplicates(text):
+#     duplicate={}
+#     for char in text:
+#         duplicate[char]=duplicate.get(char,0)+1
+#     duplicates=[]
+#     for char, count in duplicate.items():
+#         if count>1:
+#             duplicates.append(char)
+#     return duplicates
+
+# print((finde_duplicates("programming")))
+# def first_non_repeating_char(text):
+#     frequency={}
+#     for char in text:
+#         frequency[char]=frequency.get(char,0)+1
+#     for char in text:
+#         if frequency[char]==1:
+#             return char
+
+# print(first_non_repeating_char("swiss"))

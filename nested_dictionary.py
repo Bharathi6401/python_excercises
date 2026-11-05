@@ -1,24 +1,24 @@
-employee = {
-    "emp1": {"name": "Priya", "age": 24, "salary": 30000, "department": "IT"},
-    "emp2": {"name": "Arun", "age": 25, "salary": 35000, "department": "HR"},
-    "emp3": {"name": "Kumar", "age": 23, "salary": 35000, "department": "IT"},
-    "emp4": {"name": "Divya", "age": 26, "salary": 40000, "department": "IT"},
-    "emp5": {"name": "Ravi", "age": 28, "salary": 28000, "department": "HR"}
-}
-department_salary = {}
-department_count = {}
+# employee = {
+#     "emp1": {"name": "Priya", "age": 24, "salary": 30000, "department": "IT"},
+#     "emp2": {"name": "Arun", "age": 25, "salary": 35000, "department": "HR"},
+#     "emp3": {"name": "Kumar", "age": 23, "salary": 35000, "department": "IT"},
+#     "emp4": {"name": "Divya", "age": 26, "salary": 40000, "department": "IT"},
+#     "emp5": {"name": "Ravi", "age": 28, "salary": 28000, "department": "HR"}
+# }
+# department_salary = {}
+# department_count = {}
 
-for emp,details in employee.items():
-    department = details["department"]
-    salary = details["salary"]
-    department_salary[department] = department_salary.get(department, 0) + salary
-    department_count[department] = department_count.get(department, 0) + 1
-department_average = {}
-for department, total in department_salary.items():
-    average = total/department_count[department]
-    department_average[department] = average
+# for emp,details in employee.items():
+#     department = details["department"]
+#     salary = details["salary"]
+#     department_salary[department] = department_salary.get(department, 0) + salary
+#     department_count[department] = department_count.get(department, 0) + 1
+# department_average = {}
+# for department, total in department_salary.items():
+#     average = total/department_count[department]
+#     department_average[department] = average
     
-print(department_average)
+# print(department_average)
 
 # employee = {
 #     "emp1": {"name": "Priya", "age": 24, "salary": 30000, "department": "IT"},
